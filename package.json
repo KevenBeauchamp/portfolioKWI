@@ -1,6 +1,6 @@
 {
   "name": "portfoliokeven",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "proxy": "http://localhost:3001",
   "type": "commonjs",
