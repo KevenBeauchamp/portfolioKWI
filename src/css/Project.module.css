@@ -1,0 +1,19 @@
+.contentProject{
+    display: flex;
+}
+.oneProject{
+    display: flex;
+    width: 50%;
+}
+.imageProject{
+    width: 35%;
+}
+.infoProject{
+    width: 65%;
+}
+.title{
+    justify-content: center;
+    font-size: 15px;
+    color: #0000ff;
+    display: grid;
+}

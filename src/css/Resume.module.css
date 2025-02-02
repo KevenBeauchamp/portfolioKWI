@@ -1,0 +1,22 @@
+.experience{
+    display: flex;
+    height: 120px;
+}
+.experiencePartOne{
+    width: 20%;
+    background-color: #0000ff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+.education{
+    display: flex;
+}
+.experiencePartTwo{
+    width: 80%;
+    background-color: #101010;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    /* margin-right: 5px; */
+}
