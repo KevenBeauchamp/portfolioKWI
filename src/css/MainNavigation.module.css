@@ -12,7 +12,7 @@
 }
 .active{
     /* text-decoration: none; */
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 }
 .list li{
     margin-top: 15px;
@@ -26,6 +26,10 @@
     margin-left: 5px;
     margin-top: 5px;
 }
+a:visited {
+    color: blue;
+  }
+  
 /* a :hover{
    color: white;
 } */

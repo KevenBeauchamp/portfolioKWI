@@ -26,7 +26,7 @@ export default function MainNavigation(){
                 <ul className={classes.list}>
                     <motion.li
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}                   
                     >
                         <NavLink
@@ -38,7 +38,7 @@ export default function MainNavigation(){
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}  
                     >
                         <NavLink
@@ -50,7 +50,7 @@ export default function MainNavigation(){
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}  
                     >
                         <NavLink
@@ -62,7 +62,7 @@ export default function MainNavigation(){
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}  
                     >
                         <NavLink
@@ -74,7 +74,7 @@ export default function MainNavigation(){
                     </motion.li>
                     <motion.li 
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}  
                     >
                         <NavLink
@@ -86,7 +86,7 @@ export default function MainNavigation(){
                     </motion.li>
                     <motion.li 
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1,backgroundColor: "#0000ff", color:"#000000", }}
+                        whileHover={{ scale: 1.1,backgroundColor: "#000000", color:"#000000", }}
                         whileTap={{ scale: 0.95 }}  
                     >
                             <NavLink

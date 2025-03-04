@@ -1,8 +1,14 @@
 import classes from "../css/Contact.module.css";
 import telephone from "../assets/455705.png";
 import email from "../assets/email_542689.png"
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactPage(){
+    const form = useRef();
+    const YOUR_PUBLIC_KEY = "fiJMSN5TQPH17M_gb";
+    const YOUR_SERVICE_ID = "service_2xl96cl";
+    const YOUR_TEMPLATE_ID = "template_bi9quuo";
     const submitDetail = {
         name: "",
         email: "",
@@ -43,18 +49,34 @@ export default function ContactPage(){
           alert("Something went wrong, please try again later.");
         }
       };
+      const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(form.current)
+        emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
+            .then((result) => {
+                console.log("Email sent successfully:", result.text);
+                setStatus({ succes: true, message: "Message sent successfully" });
+                alert("Message sent successfully");
+                setsubmitMessage("Send");
+                setFormDetails(submitDetail);
+            })
+            .catch((error) => {
+                console.log("Error sending email:", error);
+            });
+    };
     return(
         <>
             <div className={classes.content}>
                 <div className={classes.contact}>
                     <h2 className={classes.titleForm}>Let's work together !</h2>
                     <p className={classes.paragrafForm}>I create and develop elegantly straightforward solutions, and I am passionate about my work.</p>
-                    <form className="form-inner" onSubmit={handleSubmit}>
+                    <form className="form-inner" ref={form} onSubmit={sendEmail}>
                     
                         <div className={classes.name}>
                             <div>
                                 <input
                                     type="text"
+                                    name="f_name"
                                     value={formDetails.name}
                                     required
                                     placeholder="Your name"  
@@ -64,6 +86,7 @@ export default function ContactPage(){
                             <div>
                                 <input
                                     type="email"
+                                    name="f_email"
                                     value={formDetails.email} 
                                     required
                                     placeholder="Your email"
