@@ -44,3 +44,11 @@
 .read-the-docs {
   color: #888;
 } */
+.content{
+  background-image: url("./assets/background.jpg");
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* height: 100%; */
+
+}

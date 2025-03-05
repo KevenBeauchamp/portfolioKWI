@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootPage from "./pages/Root";
 import HomePage from "./pages/Home";
@@ -49,22 +49,24 @@ const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
   return (
     <div>
       {isDesktopOrLaptop && <RouterProvider router={routers} />}
-      {isBigScreen && <p>You have a huge screen</p>}
+      {/* {isBigScreen && <p>You have a huge screen</p>} */}
       {isTabletOrMobile && 
-        <>
-          <HomePage />
-          <div>
-            <h2>About me</h2>
-            <AboutPage />
+        // <>
+          <div className='content'>         
+            <HomePage />
+            <div>
+              <h2>About me</h2>
+              <AboutPage />
+            </div>
+            <div>
+              <h2>My Skills</h2>
+              <SkillsPage />
+            </div>          
+            <ProjectPage />
+            <ResumePage />
+            <ContactPage />
           </div>
-          <div>
-            <h2>My Skills</h2>
-            <SkillsPage />
-          </div>          
-          <ProjectPage />
-          <ResumePage />
-          <ContactPage />
-        </>
+        // </>
       }
       {/* <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p> */}
       {/* {isRetina && <p>You are retina</p>} */}
