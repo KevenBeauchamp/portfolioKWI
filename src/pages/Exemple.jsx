@@ -1,6 +1,12 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import '../css/Exemple.module.css';
 export default function Exemple(){
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
@@ -11,13 +17,26 @@ export default function Exemple(){
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   return (
-    <div>
-      <h1>Device Test!</h1>
-      {isDesktopOrLaptop && <p>You are a desktop or laptop</p>}
-      {isBigScreen && <p>You have a huge screen</p>}
-      {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
-      <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
-      {isRetina && <p>You are retina</p>}
-    </div>
+    <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
   )
 }

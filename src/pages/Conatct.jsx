@@ -3,6 +3,7 @@ import telephone from "../assets/455705.png";
 import email from "../assets/email_542689.png"
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useMediaQuery } from "react-responsive";
 
 export default function ContactPage(){
     const form = useRef();
@@ -64,10 +65,12 @@ export default function ContactPage(){
                 console.log("Error sending email:", error);
             });
     };
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
     return(
         <>
-            <div className={classes.content}>
-                <div className={classes.contact}>
+            <div className= {isTabletOrMobile?"": classes.content}>
+                <div className={isTabletOrMobile?classes.contactMobile: classes.contact}>
                     <h2 className={classes.titleForm}>Let's work together !</h2>
                     <p className={classes.paragrafForm}>I create and develop elegantly straightforward solutions, and I am passionate about my work.</p>
                     <form className="form-inner" ref={form} onSubmit={sendEmail}>
@@ -122,7 +125,7 @@ export default function ContactPage(){
                         </div>
                     </form>
                 </div>
-                <div className={classes.info}>
+                <div className={isTabletOrMobile?classes.infoMobile: classes.info}>
                     <h3 className={classes.titleInfo}>Please do not hesitate to reach out to me !</h3>
                     <p className={classes.paragrafInfo}>I am consistently open to freelance opportunities should a suitable project arise.</p>
                     <div className={classes.phone}>

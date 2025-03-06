@@ -1,11 +1,16 @@
+import { useMediaQuery } from "react-responsive"
 import classes from "../css/Resume.module.css"
 export default function ResumePage(){
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isClass = isTabletOrMobile ? "education": "";
+    console.log(isTabletOrMobile)
+    console.log(isClass)
     return(
         <>
             <div>
                 <div>
                     <div>
-                        <h2>My Experience</h2>
+                        <h2 className={classes.center}>My Experience</h2>
                     </div>
                     <div>
                         <div className={classes.experience}>
@@ -46,9 +51,10 @@ export default function ResumePage(){
                 </div>
                 <div>
                     <div>
-                        <h2>My Education</h2>
+                        <h2 className={classes.center}>My Education</h2>
                     </div>
-                    <div className={classes.education} >
+                    
+                    <div className={isTabletOrMobile?classes.educationMobile: classes.education} >
                         <div>
                             <h3>Network Technician</h3>
                             <p>The Academy South of Florida – Miami, Florida </p>

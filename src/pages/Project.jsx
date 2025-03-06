@@ -5,8 +5,11 @@ import quotegeneratorPicture from "../assets/quotegenerator.png";
 import nettopoPicture from "../assets/networktopologie.png";
 import todolistPicture from "../assets/totdolist.png";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export default function ProjectPage(){
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
     return(
         <>
             <div>
@@ -15,7 +18,7 @@ export default function ProjectPage(){
                 </div>
                 <div>
                     <div  className={classes.contentProject}>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                                 className={classes.imageProject}
                                     whileHover={{
@@ -40,7 +43,7 @@ export default function ProjectPage(){
                                 <span>React JS, Redux and Laravel API</span>
                             </div>
                         </div>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                             <motion.div
                                 className={classes.imageProject}
                                     whileHover={{
@@ -66,7 +69,7 @@ export default function ProjectPage(){
                         </div>
                     </div>
                     <div  className={classes.contentProject}>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                                 className={classes.imageProject}
                                     whileHover={{
@@ -90,7 +93,7 @@ export default function ProjectPage(){
                                 <span>ryery</span>
                             </div>
                         </div>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                                 className={classes.imageProject}
                                     whileHover={{
@@ -116,7 +119,7 @@ export default function ProjectPage(){
                         </div>
                     </div>
                     <div  className={classes.contentProject}>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                             <motion.div
                                 className={classes.imageProject}
                                     whileHover={{
@@ -140,7 +143,7 @@ export default function ProjectPage(){
                                 <span></span>
                             </div>
                         </div>
-                        <div className={classes.oneProject}>
+                        <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                             className={classes.imageProject}
                                 whileHover={{

@@ -33,7 +33,7 @@ function App() {
                 {path: '/about', element: <AboutPage />},
                 {path: '/skills', element: <SkillsPage />},
                 {path: '/project', element: <ProjectPage />},
-                {path: '/resume', element: <ResumePage />},
+                {path: '/resume', element: <Exemple />},
                 {path: '/contact', element: <ContactPage />},
             ]
         }
@@ -55,11 +55,11 @@ const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
           <div className='content'>         
             <HomePage />
             <div>
-              <h2>About me</h2>
+              <h2 className='center'>About me</h2>
               <AboutPage />
             </div>
             <div>
-              <h2>My Skills</h2>
+              <h2 className='center'>My Skills</h2>
               <SkillsPage />
             </div>          
             <ProjectPage />
