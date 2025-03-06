@@ -7,7 +7,8 @@ import phpPicture from "../assets/php.png";
 import javaPicture from "../assets/java.png";
 import htmlcssPicture from "../assets/htmlcss.png";
 import databasePicture from "../assets/database.png";
-import pythonPicture from "../assets/python.png"
+import pythonPicture from "../assets/python.png";
+import networkSocial from "../assets/social-network.png"
 export default function SkillsPage(){
     const skill_one = [
         "     ",
@@ -190,9 +191,10 @@ export default function SkillsPage(){
                             duration: 0.3,
                             ease: "easeOut",
                         }}
-                    >                    <img src={htmlcssPicture} alt="" srcset=""  width="75px"/>
+                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
                         <h3>90%</h3>
-                            <span>HTML5/CSS3</span>
+                            <span>Network Configuration 
+                            </span>
                             </motion.div>                   
                             <motion.div
                     className={classes.model}
@@ -208,9 +210,9 @@ export default function SkillsPage(){
                             duration: 0.3,
                             ease: "easeOut",
                         }}
-                    >                    <img src={phpPicture} alt="" srcset=""  width="75px"/>
+                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
                         <h3>80%</h3>
-                            <span>PHP/ Laravel</span>
+                            <span>Network Troubleshooting</span>
                             </motion.div>                    
                             <motion.div
                     className={classes.model}
@@ -226,9 +228,9 @@ export default function SkillsPage(){
                             duration: 0.3,
                             ease: "easeOut",
                         }}
-                    >                    <img src={nodejsPicture} alt="" srcset=""  width="75px"/>
+                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
                         <h3>65%</h3>
-                            <span>Node JS</span>
+                            <span>Networking Concepts</span>
                             </motion.div>                    
                             <motion.div
                     className={classes.model}
@@ -244,9 +246,9 @@ export default function SkillsPage(){
                             duration: 0.3,
                             ease: "easeOut",
                         }}
-                    >                        <img src={databasePicture} alt="" srcset=""  width="75px"/>
+                    >                        <img src={networkSocial} alt="" srcset=""  width="75px"/>
                             <h3>85%</h3>
-                            <span>Database</span>
+                            <span>Routing & Switching</span>
                             </motion.div>   
                 </div>
             </div>

@@ -33,7 +33,7 @@ function App() {
                 {path: '/about', element: <AboutPage />},
                 {path: '/skills', element: <SkillsPage />},
                 {path: '/project', element: <ProjectPage />},
-                {path: '/resume', element: <Exemple />},
+                {path: '/resume', element: <ResumePage />},
                 {path: '/contact', element: <ContactPage />},
             ]
         }
