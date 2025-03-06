@@ -17,7 +17,7 @@ export default function ProjectPage(){
                     <h1>My Projects</h1>
                 </div>
                 <div>
-                    <div  className={classes.contentProject}>
+                    <div  className={isTabletOrMobile?classes.contentProjectMObile: classes.contentProject}>
                         <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                                 className={classes.imageProject}

@@ -1,9 +1,17 @@
 .contentProject{
     display: flex;
 }
+.contentProjectMObile{
+    display: flex;
+    justify-content: space-between;
+}
 .oneProject{
     display: flex;
     width: 50%;
+}
+.oneProjectMobile{
+    width: 50%;
+    padding-bottom: 10px;
 }
 .imageProject{
     width: 35%;
