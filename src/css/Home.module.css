@@ -10,3 +10,30 @@
     /* background-size: cover; */
 
 }
+.skill{
+    display: flex;
+    justify-content: flex-end;
+}
+.partTwo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.skillOne{
+    margin-left: 15px;
+}
+.social{
+    flex: 0 1 40px;
+    /* margin-top: 20px; */
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 5px;
+}
+.partThree{
+    padding-left: 75px;
+    padding-top: 15px;
+}
+span{
+    margin-right: 25px;
+}
