@@ -10,7 +10,7 @@
     width: 175px;
     display: flex;
     flex-flow: column;
-    /* max-height: 100vh; */
+    height: 100vh;
     /* flex-direction: column; */
     padding-left: 15px;
     color: blue;
