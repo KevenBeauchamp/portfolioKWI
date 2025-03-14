@@ -134,13 +134,13 @@ export default function HomePage(){
 
                       </div>
                 </div>
-                <div>
+                {/* <div>
                       <div className={classes.social}>
                         <span><a href="http://"><img src={igPicture} alt="" srcset="" width="25px" /></a></span>
                         <span><a href="https://www.linkedin.com/in/keven-beauchamp-276551298" target="_blank"><img src={linkedinPicture} alt="" srcset="" width="25px"/></a></span>
                         <span><a href="https://github.com/KevenBeauchamp" target="_blank"><img src={githubPicture} alt="" srcset="" width="25px" /></a></span>
                       </div>
-                </div>
+                </div> */}
                 
               </div>
               

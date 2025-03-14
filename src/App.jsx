@@ -66,19 +66,20 @@ const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
             <section id='home'>
             <HomePage />
 
-            </section>       
+            </section>  
+            <section id='skills'>
+              <div>
+                <h2 className='center'>My Skills</h2>
+                <SkillsPage />
+              </div>  
+            </section>      
             <section id='about'>
               <div>
                 <h2 className='center'>About me</h2>
                 <AboutPage />
               </div>
             </section>       
-            <section id='skils'>
-              <div>
-                <h2 className='center'>My Skills</h2>
-                <SkillsPage />
-              </div>  
-            </section>       
+                 
             <section id='project'>
               <ProjectPage />
 
