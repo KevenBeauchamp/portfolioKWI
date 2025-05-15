@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
   import classes from "../css/Home.module.css"
 import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive"
 import pdf from "../assets/Keven_BEAUCHAMP.pdf";
 import reactpicture from "../assets/react.webp";
 import javascript_picture from "../assets/js.webp";
@@ -21,7 +22,8 @@ export default function HomePage(){
     " Back-End Developer  ",
     "Network Administrator  ",
   ];
-
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isClass = isTabletOrMobile ? "education": "";
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -63,12 +65,12 @@ export default function HomePage(){
     });
   }, []);
     return(
-            <div>
+            <div className={classes.home}>
               <motion.div
                   initial= {{opacity:0}}
                   animate={{opacity:1}}
                   transition={{delay:0.5, duration:0.5}}            
-                  className={classes.content}
+                  className={isTabletOrMobile?classes.contentMobile: classes.content}
               >
                   
                   <h1>Hi, I'm <motion.span
@@ -78,33 +80,51 @@ export default function HomePage(){
                           }}
                           transition={{delay:1.7, duration:1}}
                   >Keven Beauchamp</motion.span></h1> 
-                  <h3>  I am  &nbsp; 
+                  <h3 >  I am  &nbsp; 
                       <motion.span className="inline">{displayText}</motion.span>
-                      &nbsp;  based in USA</h3>
-                  <p>    &nbsp;
-                  <motion.button
-                    onClick={onButtonClick}
-                      whileTap={{ scale: 0.9 }}
-                      whileHover={{
-                      scale: 1.1,
-                      backgroundColor: "#0000ff",
-                      color: "black",
-                      }}
-                      transition={{ bounceDamping: 10, bounceStiffness: 600 }}
-                      className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
-                  >
-                      Download CV
-                  </motion.button>
-                  </p>
+                      &nbsp; <br/> based in USA. I have three <br/>  certificates and a Bachelor's <br/> degree in computer science </h3>
+                  <div className={classes.allButton}>                   
+                  {/* <div>
+                    <motion.button
+                      onClick={onButtonClick}
+                        whileTap={{ scale: 0.9 }}
+                        whileHover={{
+                        scale: 1.1,
+                        backgroundColor: "#0000ff",
+                        color: "black",
+                        }}
+                        transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+                        className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
+                    >
+                        Download CV
+                    </motion.button>
+
+                  </div> */}
+                  {/* <div className={isTabletOrMobile?classes.hireButtonMobile: classes.hireButton}>
+                    <motion.button
+                      onClick={onButtonClick}
+                        whileTap={{ scale: 0.9 }}
+                        whileHover={{
+                        scale: 1.1,
+                        backgroundColor: "#0000ff",
+                        color: "black",
+                        }}
+                        transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+                        className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
+                    >
+                        Hire
+                    </motion.button>
+                  </div> */}
+                  </div>
               </motion.div>
-              <div className={classes.partThree}>
+              {/* <div className={isTabletOrMobile?classes.partThreeMobile: classes.partThree}>
                   <h3>Certificate</h3>
                   <p>Comptia Network +</p>
                   <p>IBM Full Stack Software Developer Professional Certificate</p>
                   <p>CCNA</p>
                   <p>Azure administration</p>
-              </div>
-              <div className={classes.partTwo}>
+              </div> */}
+              <div className={isTabletOrMobile?classes.partTwoMobile: classes.partTwo}>
                 <div className={classes.skill}>
                       <div className={classes.skillOne}>
                         <img src={javascript_picture}  width="25px" height="25px" alt="" srcset="" />

@@ -64,7 +64,14 @@
   width: 100%;
   position: fixed;
   z-index: 999;
-
+  display: flex;
+  justify-content: space-between;
+  /* padding-left: 15px;  */
+  /* padding-right: 15px; */
+  
+}
+.barreImage{
+  margin-right: 15px;
 }
 .navbar ul{
   display: flex;
@@ -87,8 +94,8 @@
   color: white;
 }
 #about{
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  color: white;
 }
 #project{
   background-color: white;

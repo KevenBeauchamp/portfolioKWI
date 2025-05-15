@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 15px;
+    height: 9%;
 }
 .skillOne{
     margin-left: 15px;
@@ -33,7 +34,33 @@
 .partThree{
     padding-left: 75px;
     padding-top: 15px;
+    height: 35%;
 }
 span{
     margin-right: 25px;
+}
+.partTwoMobile{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 15px;
+    height: 15%;
+
+}
+.partThreeMobile{
+    display: none;
+}
+.hireButton{
+    display: none;
+}
+.contentMobile{
+    padding-top: 70px;
+    text-align: center;
+}
+.contentMobile h3{
+    font-size: 40px;
+}
+.allButton{
+    display: flex;
+    justify-content: space-around;
 }

@@ -11,6 +11,7 @@ import ResumePage from './pages/Resume';
 import ContactPage from './pages/Conatct';
 import ProjectPage from './pages/Project';
 import Exemple from './pages/Exemple';
+import barePic from './assets/3barres.png';
 import { useMediaQuery } from 'react-responsive'
 
 
@@ -54,31 +55,39 @@ const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
         // <>
           <div className='content'> 
             <div className='navbar'>
-              <ul>
+              <div>
+                
+                <span>Keven</span>
+              </div>
+              <div className="barreImage">
+                <a href=""><img src={barePic} alt="" width="35px" /></a>
+              </div>
+              {/* <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
-              </ul>
+              </ul> */}
             </div> 
             <section id='home'>
             <HomePage />
 
             </section>  
+            <section id='about'>
+              <div>
+                <h2 className='center'>About me</h2>
+                <AboutPage />
+              </div>
+            </section> 
             <section id='skills'>
               <div>
                 <h2 className='center'>My Skills</h2>
                 <SkillsPage />
               </div>  
             </section>      
-            <section id='about'>
-              <div>
-                <h2 className='center'>About me</h2>
-                <AboutPage />
-              </div>
-            </section>       
+                  
                  
             <section id='project'>
               <ProjectPage />

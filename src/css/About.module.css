@@ -13,11 +13,45 @@
     /* padding-left: 40px;
     padding-right: 40px; */
 }
-.infoMobile{
-    width: 55%;
+.picture{
+    /* width: 55%; */
+    justify-content: center;
+    display: flex;
+    /* width: 375px; */
+    
 }
-.resumeMobile{
-    width: 45%;
+.picture img{
+    width: 375px;
+}
+.tableResume{
+    font-size: 40px;
+
+}
+
+.resumeMobile p {
+    display:flex;
+    font-size: xx-large;
+    /* text-align: center; */
+    /* margin-left: 25px; */
+    /* margin-right: 25px; */
+    /* width: 75%; */
     /* padding-left: 40px;
     padding-right: 40px; */
+}
+.contentMobile{
+    /* margin: 0 auto; */
+    padding: 10px;
+    /* position: relative; */
+}
+.buttonAbout{
+    text-align: center;
+    /* display: flex; */
+    /* color: blue; */
+    /* background-color: blue; */
+}
+.buttonAbout button{
+    width: 150px;
+    height: 30px;
+    background-color: #07070b;
+    color: #0000ff;
 }

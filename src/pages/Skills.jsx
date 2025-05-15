@@ -28,6 +28,8 @@ export default function SkillsPage(){
     return(
         <>
             <div >
+            <h2 className={classes.title}>My Skills</h2>
+
                 <div className={classes.content}>
                 <motion.div
                 className={classes.model}
