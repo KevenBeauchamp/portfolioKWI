@@ -82,7 +82,7 @@ export default function HomePage(){
                   >Keven Beauchamp</motion.span></h1> 
                   <h3 >  I am  &nbsp; 
                       <motion.span className="inline">{displayText}</motion.span>
-                      &nbsp; <br/> based in USA. I have three <br/>  certificates and a Bachelor's <br/> degree in computer science </h3>
+                      &nbsp; <br/> based in USA. I have three  certificates and a Bachelor's <br/> degree in computer science </h3>
                   <div className={classes.allButton}>                   
                   {/* <div>
                     <motion.button
