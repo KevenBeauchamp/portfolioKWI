@@ -57,19 +57,19 @@ export default function AboutPage(){
                             Information
                           </caption>
                           <tr>
-                            <td>Email : </td>
+                            <td>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : </td>
                             <td>kevenbeauchamp96@gmail.com</td>
                           </tr>
                           <tr>
-                            <td>Phone : </td>
+                            <td>Phone &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   : </td>
                             <td>+1 (754)2620862</td>
                           </tr>
                           <tr>
-                            <td>Language : </td>
+                            <td>Language &nbsp; &nbsp;  : </td>
                             <td>French,English,Creole</td>
                           </tr>
                           <tr>
-                            <td>Freelance : </td>
+                            <td>Freelance &nbsp; &nbsp;&nbsp;: </td>
                             <td>Available</td>
                           </tr>
                         </table>
@@ -81,15 +81,15 @@ export default function AboutPage(){
                           </caption>
                           <tr>
                             <td>ComptIA Network+ </td>
-                            <td><a href="http://" target="_blank" rel="noopener noreferrer">Badge</a></td>
+                            <td>&nbsp;&nbsp;<a href="http://" target="_blank" rel="noopener noreferrer">Badge</a></td>
                           </tr>
                           <tr>
                             <td>IBM Full Stack Develloper </td>
-                            <td><a href="http://" target="_blank" rel="noopener noreferrer">Certificate</a></td>
+                            <td>&nbsp;&nbsp;<a href="http://" target="_blank" rel="noopener noreferrer">Certificate</a></td>
                           </tr>
                           <tr>
                             <td>CCNA</td>
-                            <td><a href="http://" target="_blank" rel="noopener noreferrer">Badge</a></td>
+                            <td>&nbsp;&nbsp;<a href="http://" target="_blank" rel="noopener noreferrer">Badge</a></td>
                           </tr>
                         </table>
                     </div>

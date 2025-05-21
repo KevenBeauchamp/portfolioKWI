@@ -43,15 +43,16 @@
     padding: 10px;
     /* position: relative; */
 }
-.buttonAbout{
-    text-align: center;
+/* .buttonAbout{ */
+    /* text-align: center; */
     /* display: flex; */
     /* color: blue; */
     /* background-color: blue; */
-}
+/* } */
 .buttonAbout button{
     width: 150px;
     height: 30px;
-    background-color: #07070b;
-    color: #0000ff;
+    background-color: #0921d8;
+    color: #f1f1f8;
+    border: 1px solid black;
 }

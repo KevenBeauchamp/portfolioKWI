@@ -14,7 +14,7 @@ export default function ProjectPage(){
         <>
             <div>
                 <div className={classes.title}>
-                    <h1>My Projects</h1>
+                    <h1>Projects</h1>
                 </div>
                 <div>
                     <div  className={isTabletOrMobile?classes.contentProjectMObile: classes.contentProject}>
@@ -68,7 +68,7 @@ export default function ProjectPage(){
                             </div>
                         </div>
                     </div>
-                    <div  className={classes.contentProject}>
+                    <div  className={isTabletOrMobile?classes.contentProjectMObile: classes.contentProject}>
                         <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                         <motion.div
                                 className={classes.imageProject}
@@ -118,7 +118,7 @@ export default function ProjectPage(){
                             </div>
                         </div>
                     </div>
-                    <div  className={classes.contentProject}>
+                    <div  className={isTabletOrMobile?classes.contentProjectMObile: classes.contentProject}>
                         <div className={isTabletOrMobile?classes.oneProjectMobile: classes.oneProject}>
                             <motion.div
                                 className={classes.imageProject}
