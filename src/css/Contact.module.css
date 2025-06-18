@@ -89,3 +89,11 @@
     justify-content:  center;
     display: flex;
 }
+
+.inputTry{
+    background: none;
+    border: 1px solid #646464;
+    border-radius: 19px;
+    color: white;
+    padding-left: 15px;
+}

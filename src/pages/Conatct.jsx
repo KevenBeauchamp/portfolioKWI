@@ -83,6 +83,7 @@ export default function ContactPage(){
                                     value={formDetails.name}
                                     required
                                     placeholder="Your name"  
+                                    className={classes.inputTry}
                                     onChange={(e) => onFormUpdate("name", e.target.value)} 
                                 />
                             </div>
@@ -93,6 +94,7 @@ export default function ContactPage(){
                                     value={formDetails.email} 
                                     required
                                     placeholder="Your email"
+                                    className={classes.inputTry}
                                     onChange={(e) => onFormUpdate("email", e.target.value)} 
                                 />
                             </div>
@@ -104,6 +106,7 @@ export default function ContactPage(){
                                 required
                                 name="subject" id="" 
                                 placeholder="Subject"
+                                className={classes.inputTry}
                                 onChange={(e) => onFormUpdate("subject", e.target.value)} 
                             />
                         </div>
@@ -113,6 +116,7 @@ export default function ContactPage(){
                                 value={formDetails.message} 
                                 placeholder="Your message"
                                 required
+                                className={classes.inputTry}
                                 id=""
                                 onChange={(e) => onFormUpdate("message", e.target.value)} 
 
