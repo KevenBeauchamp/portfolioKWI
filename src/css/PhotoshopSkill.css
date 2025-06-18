@@ -1,0 +1,61 @@
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+    color: white;
+    padding: 1rem;
+  }
+  
+  .progress-wrapper {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  @media (min-width: 640px) {
+    .progress-wrapper {
+      width: 8rem;
+      height: 8rem;
+      margin-left: 15px;
+    }
+    .skill-bg {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0.5;
+        z-index: 1;
+        margin-left: 12px;
+      }
+  }
+  
+  @media (min-width: 1024px) {
+    .progress-wrapper {
+      width: 9rem;
+      height: 11rem;
+    }
+    .skill-bg {
+        position: absolute;
+        width: 80%;
+        height: 85%;
+        object-fit: contain;
+        opacity: 0.5;
+        z-index: 1;
+        margin-left: 14px;
+      }
+  }
+  
+  
+  
+  .progress-wrapper .CircularProgressbar {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .skill-label {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  

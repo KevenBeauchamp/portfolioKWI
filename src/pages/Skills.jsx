@@ -6,11 +6,16 @@ import nodejsPicture from "../assets/nodejs.png";
 import phpPicture from "../assets/php.png";
 import javaPicture from "../assets/java.png";
 import htmlcssPicture from "../assets/htmlcss.png";
-import databasePicture from "../assets/database.png";
+import databasePicture from "../assets/databse.png";
 import pythonPicture from "../assets/python.png";
-import networkSocial from "../assets/social-network.png"
+import networkSocial from "../assets/management.png"
+import laravelImage from "../assets/laravel.webp"
 import PhotoshopSkill from "../component/PhotoshopSkill.jsx";
+import { useMediaQuery } from "react-responsive";
+
 export default function SkillsPage(){
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
     const skill_one = [
         "     ",
         " Front-End Developer   ",
@@ -28,239 +33,47 @@ export default function SkillsPage(){
       ];
     return(
         <>
-            {/* <div >
-            <h2 className={classes.title}>My Skills</h2>
-
+            <div className={isTabletOrMobile?classes.hiddenContent: " "}>
                 <div className={classes.content}>
-                <motion.div
-                className={classes.model}
-                    whileHover={{
-                        scale: [null, 1.1, 1.3],
-                        transition: {
-                            duration: 0.5,
-                            times: [0, 0.6, 1],
-                            ease: ["easeInOut", "easeOut"],
-                        },
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                    }}
-                >
-                        <img src={javascript_picture} alt="" srcset=""  width="75px"/>
-                        <h3>85%</h3>
-                        <span>Javascript</span>
-                    </motion.div>
-                    <motion.div
-                className={classes.model}
-                    whileHover={{
-                        scale: [null, 1.1, 1.3],
-                        transition: {
-                            duration: 0.5,
-                            times: [0, 0.6, 1],
-                            ease: ["easeInOut", "easeOut"],
-                        },
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                    }}
-                >                     */}
-                {/* 
-                <img src={javaPicture} alt="" srcset=""  width="75px"/> */}
-                    {/* <h3>75%</h3>
-                        <span>Java</span>
-                        </motion.div>
-                        <motion.div
-                className={classes.model}
-                    whileHover={{
-                        scale: [null, 1.1, 1.3],
-                        transition: {
-                            duration: 0.5,
-                            times: [0, 0.6, 1],
-                            ease: ["easeInOut", "easeOut"],
-                        },
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                    }}
-                >                    <img src={pythonPicture} alt="" srcset=""  width="75px"/>
-                    <h3>65%</h3>
-                        <span>Python</span>
-                        </motion.div>                    <motion.div
-                className={classes.model}
-                    whileHover={{
-                        scale: [null, 1.1, 1.3],
-                        transition: {
-                            duration: 0.5,
-                            times: [0, 0.6, 1],
-                            ease: ["easeInOut", "easeOut"],
-                        },
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                    }}
-                >                    <img src={reactpicture} alt="" srcset=""  width="75px"/>
-                    <h3>85%</h3>
-                        <span>React JS</span>
-                        </motion.div>              
+                    <PhotoshopSkill  percentage="90"  name="JS" logo={javascript_picture} />
+                    <PhotoshopSkill  percentage="75"  name="Node JS" logo={nodejsPicture} />
+                    <PhotoshopSkill  percentage="90"  name="Html/CSS" logo={htmlcssPicture} />
+                    <PhotoshopSkill  percentage="90"  name="PHP" logo={phpPicture} />
+                    <PhotoshopSkill  percentage="90"  name="REACT" logo={reactpicture} />
+                    <PhotoshopSkill  percentage="80"  name="Laravel" logo={laravelImage} />
                 </div>
                 <div className={classes.content}>
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={htmlcssPicture} alt="" srcset=""  width="75px"/>
-                        <h3>90%</h3>
-                            <span>HTML5/CSS3</span>
-                            </motion.div>                   
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={phpPicture} alt="" srcset=""  width="75px"/>
-                        <h3>80%</h3>
-                            <span>PHP/ Laravel</span>
-                            </motion.div>                    
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={nodejsPicture} alt="" srcset=""  width="75px"/>
-                        <h3>65%</h3>
-                            <span>Node JS</span>
-                            </motion.div>                    
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                        <img src={databasePicture} alt="" srcset=""  width="75px"/>
-                            <h3>85%</h3>
-                            <span>Database</span>
-                            </motion.div>   
+                <PhotoshopSkill  percentage="70"  name="Python" logo={pythonPicture} />
+                <PhotoshopSkill  percentage="75"  name="Java" logo={javaPicture} />
+                <PhotoshopSkill  percentage="75"  name="Network Management" logo={networkSocial} />
+                <PhotoshopSkill  percentage="80"  name="Database" logo={databasePicture} />
+                <PhotoshopSkill  percentage="75"  name="Wireless Technologies" logo={networkSocial} />
+                <PhotoshopSkill  percentage="75"  name="Routing And Switching" logo={networkSocial} />
+                </div>
+            </div>
+            <div className={isTabletOrMobile?" ": classes.hiddenContent}>
+                <div className={classes.content}>
+                <PhotoshopSkill  percentage="90"  name="JS" logo={javascript_picture} />
+                <PhotoshopSkill  percentage="75"  name="Node JS" logo={nodejsPicture} />
+                <PhotoshopSkill  percentage="90"  name="Html/CSS" logo={htmlcssPicture} />
+                <PhotoshopSkill  percentage="90"  name="React" logo={reactpicture} />
                 </div>
                 <div className={classes.content}>
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
-                        <h3>90%</h3>
-                            <span>Network Configuration 
-                            </span>
-                            </motion.div>                   
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
-                        <h3>80%</h3>
-                            <span>Network Troubleshooting</span>
-                            </motion.div>                    
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                    <img src={networkSocial} alt="" srcset=""  width="75px"/>
-                        <h3>65%</h3>
-                            <span>Networking Concepts</span>
-                            </motion.div>                    
-                            <motion.div
-                    className={classes.model}
-                        whileHover={{
-                            scale: [null, 1.1, 1.3],
-                            transition: {
-                                duration: 0.5,
-                                times: [0, 0.6, 1],
-                                ease: ["easeInOut", "easeOut"],
-                            },
-                        }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeOut",
-                        }}
-                    >                        <img src={networkSocial} alt="" srcset=""  width="75px"/>
-                            <h3>85%</h3>
-                            <span>Routing & Switching</span>
-                            </motion.div>   
-                </div> */}
-                {/* <div>                 */}
-                
-                {/* </div> */}
-            {/* </div> */}
-            <PhotoshopSkill />
+                <PhotoshopSkill  percentage="80"  name="Laravel" logo={laravelImage} />
+                <PhotoshopSkill  percentage="90"  name="PHP" logo={phpPicture} />
+                <PhotoshopSkill  percentage="70"  name="Python" logo={pythonPicture} />
+                <PhotoshopSkill  percentage="75"  name="Java" logo={javaPicture} />
+                </div>
+                <div className={classes.content}>
+                <PhotoshopSkill  percentage="75"  name="Network Management" logo={networkSocial} />
+                <PhotoshopSkill  percentage="80"  name="Database" logo={databasePicture} />
+                <PhotoshopSkill  percentage="75"  name="Wireless Technologies" logo={networkSocial} />
+                <PhotoshopSkill  percentage="75"  name="Routing And Switching" logo={networkSocial} />
+                </div>
+            </div>
+            
+            
+            
         </>
     )
 }
