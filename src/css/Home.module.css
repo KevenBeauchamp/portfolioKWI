@@ -12,13 +12,17 @@
 }
 .skill{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    
 }
 .partTwo{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
+    /* display: flex;
+    justify-content: center;
+    padding-top: 15px; */
     height: 9%;
+    position:absolute;
+    bottom: 0;
+    left: 43%;
 }
 .skillOne{
     margin-left: 15px;
@@ -59,6 +63,9 @@ span{
 }
 .contentMobile h3{
     font-size: 40px;
+}
+.content h3{
+    font-size: 30px;
 }
 .allButton{
     display: flex;

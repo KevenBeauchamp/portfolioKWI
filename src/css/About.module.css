@@ -1,9 +1,9 @@
 .content{
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: space-around;
     /* height: 100vh; */
     font-size: 20px;
-    padding-top: 30px;
+    /* padding-top: 0px; */
 }
 .info{
     width: 40%;
@@ -23,9 +23,13 @@
 .picture img{
     width: 375px;
 }
-.tableResume{
-    font-size: 40px;
+.tableResume .tableResumes{
+    /* display: none; */
+    width: 40px;
 
+}
+.tableResumeMobile {
+       font-size: 40px;
 }
 
 .resumeMobile p {
@@ -49,10 +53,22 @@
     /* color: blue; */
     /* background-color: blue; */
 /* } */
-.buttonAbout button{
-    width: 150px;
+.buttonAboutMobile button{
+    width: 250px;
     height: 30px;
     background-color: #0921d8;
     color: #f1f1f8;
     border: 1px solid black;
+}
+.buttonAbout {
+    display: flex;
+    justify-content: center;
+}
+.buttonAbout button{
+    width: 150px;
+    height: 50px;
+    background-color: #0921d8;
+    color: #f1f1f8;
+    border: 1px solid black;
+    /* text-size-adjust: 25px; */
 }

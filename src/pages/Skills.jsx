@@ -9,6 +9,7 @@ import htmlcssPicture from "../assets/htmlcss.png";
 import databasePicture from "../assets/database.png";
 import pythonPicture from "../assets/python.png";
 import networkSocial from "../assets/social-network.png"
+import PhotoshopSkill from "../component/PhotoshopSkill.jsx";
 export default function SkillsPage(){
     const skill_one = [
         "     ",
@@ -27,7 +28,7 @@ export default function SkillsPage(){
       ];
     return(
         <>
-            <div >
+            {/* <div >
             <h2 className={classes.title}>My Skills</h2>
 
                 <div className={classes.content}>
@@ -64,10 +65,10 @@ export default function SkillsPage(){
                         duration: 0.3,
                         ease: "easeOut",
                     }}
-                >                    
+                >                     */}
                 {/* 
                 <img src={javaPicture} alt="" srcset=""  width="75px"/> */}
-                    <h3>75%</h3>
+                    {/* <h3>75%</h3>
                         <span>Java</span>
                         </motion.div>
                         <motion.div
@@ -254,41 +255,12 @@ export default function SkillsPage(){
                             <h3>85%</h3>
                             <span>Routing & Switching</span>
                             </motion.div>   
-                </div>
-                {/* <div>                
-                    <div className={classes.mdoalcircular} style={{
-                        // backgroundImage: `url(${javascript_picture})`,
-                        // backgroundSize: '60px',
-                        // backgroundRepeat: 'no-repeat',
-                        // backgroundPosition: 'center',
-                        // opacity: 0.5,
-                        }}>
-                        <svg sty xmlns="http://www.w3.org/2000/svg" width="200" height="200">
-                           <circle
-                                cx="50"
-                                cy="50"
-                                r="40"
-                                stroke="white"
-                                stroke-width="10"
-                                fill="none"                            
-                            />
-                            <circle
-                                cx="50"
-                                cy="50"
-                                r="40"
-                                stroke="blue"
-                                stroke-width="10"
-                                fill="none"
-                                stroke-dasharray="251.2"
-                                stroke-dashoffset="62.8"
-                                transform="rotate(-90 50 50)"
-                            />
-                        </svg>
-                        <p className={classes.pourcentage}>75%</p>
-                    </div>
-                    <p>Javascript</p>
                 </div> */}
-            </div>
+                {/* <div>                 */}
+                
+                {/* </div> */}
+            {/* </div> */}
+            <PhotoshopSkill />
         </>
     )
 }

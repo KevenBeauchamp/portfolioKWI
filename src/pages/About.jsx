@@ -36,8 +36,9 @@ export default function AboutPage(){
   }, []);
     return(
         <>
-            <div className={isTabletOrMobile?classes.contentMobile: classes.content}>
-                <div className={isTabletOrMobile?classes.infoMobile: classes.info}>
+            <div className={isTabletOrMobile?classes.contentMobile: ""}>
+                <div className={isTabletOrMobile?classes.infoMobile: ""}>
+                  <div className={isTabletOrMobile?"": classes.content }>
                     <motion.div
                         animate={{ rotate: 360 }}
                         transition={{ duration: 1 }}
@@ -50,31 +51,33 @@ export default function AboutPage(){
                       {/* <motion.span>{displayText}</motion.span> */}
 
                     </div>
-                    <div className={classes.tableResume}>
+                  </div>
+                  <div className={isTabletOrMobile?"": classes.content }>
+                    <div className={classes.tableResumes}>
                         
                         <table>
                           <caption>
                             Information
                           </caption>
                           <tr>
-                            <td>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : </td>
+                            <td>Email {isTabletOrMobile?" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;": " "} : </td>
                             <td>kevenbeauchamp96@gmail.com</td>
                           </tr>
                           <tr>
-                            <td>Phone &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   : </td>
+                            <td>Phone {isTabletOrMobile?" &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;": " "}    : </td>
                             <td>+1 (754)2620862</td>
                           </tr>
                           <tr>
-                            <td>Language &nbsp; &nbsp;  : </td>
+                            <td>Language {isTabletOrMobile?" &nbsp; &nbsp;": " "}   : </td>
                             <td>French,English,Creole</td>
                           </tr>
                           <tr>
-                            <td>Freelance &nbsp; &nbsp;&nbsp;: </td>
+                            <td>Freelance{isTabletOrMobile?" &nbsp; &nbsp;&nbsp;": " "}: </td>
                             <td>Available</td>
                           </tr>
                         </table>
                     </div>
-                    <div className={classes.tableResume}>
+                    <div className={isTabletOrMobile?classes.tableResumeMobile: classes.tableResume}>
                         <table>
                           <caption>
                               Certification
@@ -93,8 +96,10 @@ export default function AboutPage(){
                           </tr>
                         </table>
                     </div>
+                  </div>
+                    
                 </div>
-                <div className={classes.buttonAbout}>
+                <div className= {isTabletOrMobile?classes.buttonAboutMobile: classes.buttonAbout}>
                     <motion.button
                       onClick={onButtonClick}
                         whileTap={{ scale: 0.9 }}
