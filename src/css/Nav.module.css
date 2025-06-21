@@ -1,0 +1,24 @@
+.list li{
+    margin-top: 15px;
+    margin-left: px;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 25px ;
+}
+.list li a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+a:visited {
+    color: blue;
+  }
+  .buttonCV{
+    display: flex;
+    justify-content: center;
+    /* color: blue; */
+  }
+  .buttonCV button{
+    /* width: 120px; */
+    height: 40px;
+  }

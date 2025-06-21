@@ -83,38 +83,7 @@ export default function HomePage(){
                   <h3 >  I am  &nbsp; 
                       <motion.span className="inline">{displayText}</motion.span>
                       &nbsp; <br/> I have three  certificates and a Bachelor's {isTabletOrMobile?<br/> : ""} degree in computer science </h3>
-                  <div className={classes.allButton}>                   
-                  {/* <div>
-                    <motion.button
-                      onClick={onButtonClick}
-                        whileTap={{ scale: 0.9 }}
-                        whileHover={{
-                        scale: 1.1,
-                        backgroundColor: "#0000ff",
-                        color: "black",
-                        }}
-                        transition={{ bounceDamping: 10, bounceStiffness: 600 }}
-                        className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
-                    >
-                        Download CV
-                    </motion.button>
-
-                  </div> */}
-                  {/* <div className={isTabletOrMobile?classes.hireButtonMobile: classes.hireButton}>
-                    <motion.button
-                      onClick={onButtonClick}
-                        whileTap={{ scale: 0.9 }}
-                        whileHover={{
-                        scale: 1.1,
-                        backgroundColor: "#0000ff",
-                        color: "black",
-                        }}
-                        transition={{ bounceDamping: 10, bounceStiffness: 600 }}
-                        className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
-                    >
-                        Hire
-                    </motion.button>
-                  </div> */}
+                  <div className={classes.allButton}> 
                   </div>
               </motion.div>
               {/* <div className={isTabletOrMobile?classes.partThreeMobile: classes.partThree}>

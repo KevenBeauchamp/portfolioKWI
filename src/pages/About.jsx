@@ -53,26 +53,26 @@ export default function AboutPage(){
                     </div>
                   </div>
                   <div className={isTabletOrMobile?"": classes.content }>
-                    <div className={classes.tableResumes}>
+                    <div className={isTabletOrMobile?classes.tableResumeMobile: classes.tableResume}>
                         
                         <table>
                           <caption>
                             Information
                           </caption>
                           <tr>
-                            <td>Email {isTabletOrMobile?" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;": " "} : </td>
+                            <td>Email : </td>
                             <td>kevenbeauchamp96@gmail.com</td>
                           </tr>
                           <tr>
-                            <td>Phone {isTabletOrMobile?" &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;": " "}    : </td>
+                            <td>Phone    : </td>
                             <td>+1 (754)2620862</td>
                           </tr>
                           <tr>
-                            <td>Language {isTabletOrMobile?" &nbsp; &nbsp;": " "}   : </td>
+                            <td>Language  : </td>
                             <td>French,English,Creole</td>
                           </tr>
                           <tr>
-                            <td>Freelance{isTabletOrMobile?" &nbsp; &nbsp;&nbsp;": " "}: </td>
+                            <td>Freelance: </td>
                             <td>Available</td>
                           </tr>
                         </table>

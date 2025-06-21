@@ -54,7 +54,7 @@ export default function ResumePage(){
                         <h2 className={classes.center}>My Education</h2>
                     </div>
                     
-                    <div className={isTabletOrMobile?classes.educationMobile: classes.education} >
+                    <div className={isTabletOrMobile?classes.displayHidden: classes.education} >
                         <div>
                             <h3>Network Technician</h3>
                             <p>The Academy South of Florida – Miami, Florida </p>
@@ -69,6 +69,29 @@ export default function ResumePage(){
                             <p>Equivalency USA: Bachelor of Computer Science by World Education Services (WES) </p>
                         </div>
                     </div>
+                        <div className={isTabletOrMobile?classes.flexpart: classes.displayHidden}>
+                            <div className={classes.partEduMob}>
+                                <h3 className={classes.h3Style}>2024</h3>
+                               
+                            </div>
+                            <div className={classes.experiencePartTwo}>
+                                <h3>Network Technician</h3>
+                                <p>The Academy South of Florida – Miami, Florida </p>
+                                <p>Relevant Coursework: IT Support Fundamentals, Networking Essentials, TCP/IP Protocols, Operating 
+                                Systems </p>
+                            </div>
+                        </div>
+                        <div className={isTabletOrMobile?classes.flexpart: classes.displayHidden}>
+                            <div className={classes.partEduMob}>
+                                <h3 className={classes.h3StyleTwo}>2017-2021</h3>
+                               
+                            </div>
+                            <div className={classes.experiencePartTwo}>
+                                <h3>Bachelor of Computer Science</h3>
+                                <p>Ecole Supérieure D’infotronique d’Haïti – Port-au-Prince, Haiti </p>
+                                <p>Equivalency USA: Bachelor of Computer Science by World Education Services (WES) </p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </>
